@@ -6,4 +6,8 @@
 
 @layer components {}
 
-@layer utilities {}
+@layer utilities {
+    .page-x-padding {
+        @apply px-20;
+    }
+}
