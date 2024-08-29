@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+    body {
+        @apply text-black font-light text-xl bg-white relative;
+    }
+}
 
 @layer components {}
 
-@layer utilities {
-    .page-x-padding {
-        @apply px-20;
-    }
-}
+@layer utilities {}

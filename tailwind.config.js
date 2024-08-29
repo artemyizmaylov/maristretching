@@ -16,6 +16,9 @@ module.exports = {
     fontFamily: {
       sans: ['var(--helveticaNeue)'],
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 };
