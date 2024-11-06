@@ -10,10 +10,10 @@ export default function CourseCard() {
                 <p className="text-left">Уникальная программа похудения и комплекс тренировок для быстрого сжиросжигания в домашних условиях. Самые эффективные упражнения и тренировки на все тело.</p>
                 <Link href="#" className="text-3xl uppercase underline underline-offset-8 hover:text-pink pb-5">Подробнее</Link>
                 <span className="text-4xl font-normal pb-5">2990р</span>
-                <button className="text-3xl font-semibold uppercase text-white bg-purple rounded-3xl py-5 max-w-md">Купить курс</button>
+                <button className="text-3xl font-semibold uppercase text-white bg-purple rounded-3xl py-5 max-w-md">Подробнее</button>
             </div>
             <div className="basis-1/2 self-end flex flex-col gap-y-4">
-                <Image src={video1} />
+                <Image src={video1} alt="#" />
                 <div className="flex divide-x">
                     <span className="lowercase pr-4">Нужен только коврик</span>
                     <span className="lowercase pl-4">Доступ 3 месяца</span>

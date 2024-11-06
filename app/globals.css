@@ -8,6 +8,38 @@
     }
 }
 
-@layer components {}
+@layer components {
+    .nav-toggle {
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-toggle [class*='bar-'] {
+        @apply bg-green;
+        @apply block;
+        transform: rotate(0deg);
+        transition: .2s ease all;
+        height: 3px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .nav-toggle .bar-bot {
+        margin-bottom: 0;
+    }
+
+    .opened .bar-top {
+        transform: rotate(45deg);
+        transform-origin: 15% 15%;
+    }
+
+    .opened .bar-mid {
+        opacity: 0;
+    }
+
+    .opened .bar-bot {
+        transform: rotate(-45deg);
+        transform-origin: 15% 95%;
+    }
+}
 
 @layer utilities {}
