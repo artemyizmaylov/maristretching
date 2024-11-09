@@ -1,6 +1,13 @@
+'use client'
+import { useRouter } from "next/navigation";
+
 export default function BackwardButton({ className }) {
+    const router = useRouter();
+
     return (
-        <button className={`flex place-items-center w-min h-min color- hover:text-pink hover: ${className}`}>
+        <button
+            className={`flex place-items-center w-min h-min color- hover:text-pink hover: ${className}`}
+            onClick={router.back}>
             <svg
                 width="43"
                 height="16"

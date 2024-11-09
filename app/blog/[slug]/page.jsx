@@ -1,13 +1,14 @@
-'use client'
+import Image from "next/image";
+import { getPostData } from "@/api";
 
-import Post, { metadata } from '@/app/posts/post.mdx';
-
-export default function BlogArticle() {
+export default function BlogArticle({ searchParams }) {
+    const data = getPostData(searchParams.search)
 
     return (
         <div className="pt-20">
-            <Post />
-            {console.log(metadata)}
+            <Image src={data.image} width={400} height={400} />
+            <h2>{data.title}</h2>
+            <p>{data.content}</p>
         </div>
     );
 }
