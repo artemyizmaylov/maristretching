@@ -12,10 +12,10 @@ export default function Home() {
   const courses = getAllCourses();
 
   return (
-    <main className="pt-24 px-4 relative">
+    <main className="pt-20 px-4 relative">
       <Image src={hero} alt="#" width={1440} height={967} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
 
-      <section className="container full-screen flex flex-col items-center sm:items-baseline pt-10 sm:pt-20 gap-14">
+      <section id="hero" className="container full-screen flex flex-col items-center sm:items-baseline pt-10 sm:pt-20 gap-14">
         <h1 className="font-extralight text-4xl sm:text-7xl text-green uppercase">Mari Stretching</h1>
         <p className="text-2xl max-w-[537px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac feugiat velit. Nulla elementum felis placerat, interdum metus eget, congue risus. Nullam at euismod erat.</p>
         <Link className="font-semibold sm:text-2xl text-center text-white px-10 py-6 bg-pink rounded-3xl max-w-[435px] z-0" href="#">Запись на консультацию</Link>
@@ -42,7 +42,7 @@ export default function Home() {
         <Image src={about2} alt="#" width={476} height={639} className="object-contain md:w-1/2" />
       </section>
 
-      <section id="courses">
+      <section id="courses" className="container mt-20">
         {courses.map((course) => (
           <CourseCard
             key={course.id}

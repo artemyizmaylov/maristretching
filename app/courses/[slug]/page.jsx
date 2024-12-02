@@ -6,7 +6,7 @@ export default function Course({ searchParams }) {
     const data = getCourseData(searchParams.search);
 
     return (
-        <section>
+        <section className="pt-20">
             <h2 className="text-pink font-extralight text-7xl uppercase">О курсе {data.title}</h2>
             <div className="flex flex-wrap justify-center lg:justify-between pt-10">
                 <Image src={data.image} width={543} height={577} />

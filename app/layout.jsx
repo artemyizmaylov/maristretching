@@ -1,6 +1,6 @@
-import "./globals.css";
 import localFont from 'next/font/local';
-import Header from "./ui/header";
+import "@/app/global.css";
+import Header from "@/app/ui/header.jsx";
 
 export const metadata = {
   title: "Marystretching",

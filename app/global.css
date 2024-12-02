@@ -9,6 +9,11 @@
 }
 
 @layer components {
+    .full-screen {
+        width: 100%;
+        min-height: calc(100dvh - 96px);
+    }
+
     .nav-toggle {
         transform: translate(-50%, -50%);
     }

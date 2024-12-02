@@ -1,8 +1,8 @@
-import Faq from "../ui/faq"
+import Faq from "@/app/ui/faq.jsx"
 
 export default function CoursesLayout({ children }) {
     return (
-        <main className="container pt-20">
+        <main className="pt-20 px-4 relative">
             {children}
             <section className="pt-20">
                 <h2 className="text-7xl text-green font-extralight uppercase mb-10">Часто задаваемые вопросы</h2>

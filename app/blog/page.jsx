@@ -1,4 +1,4 @@
-import ArticleCard from "../ui/article-card";
+import ArticleCard from "@/app/ui/article-card";
 import { getSortedPostsData } from "@/api";
 
 export default function Blog() {
