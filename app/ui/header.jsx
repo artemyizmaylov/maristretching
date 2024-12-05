@@ -53,13 +53,10 @@ export default function Header() {
                 menuOpen();
                 break;
         }
-        console.log('btn click');
-
     };
 
     const onLinksClick = () => {
         menuClose();
-        console.log('link click');
     };
 
     useEffect(() => {
