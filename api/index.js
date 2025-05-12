@@ -6,6 +6,9 @@ const postsDirectory = path.join(process.cwd(), 'posts');
 const coursesDirectory = path.join(process.cwd(), 'courses');
 
 export function getSortedPostsData() {
+    console.log('Search for the posts...')
+    console.log(process.cwd());
+
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName) => {
