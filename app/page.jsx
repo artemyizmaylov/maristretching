@@ -2,10 +2,12 @@ import { getAllCourses } from "@/api";
 
 import Image from "next/image";
 import Link from "next/link";
-import CourseCard from "@/app/ui/course-card";
+import Slider from "./ui/slider";
 
 import hero from '@/app/images/hero.webp'
 import about2 from '@/app/images/about-me2.webp';
+import CourseCard from "./ui/course-card";
+
 
 export default function Home() {
   const courses = getAllCourses();
@@ -25,7 +27,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="container pt-20 max-h-[90dvh] flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6">
+      <section className="container pt-20 flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6">
         <div className="flex flex-col justify-between w-full md:w-1/2 gap-6">
           <h2 className="text-pink font-extralight text-4xl sm:text-7xl uppercase">Почему пилатес?</h2>
           <h3 className="text-3xl">ТЕЛО</h3>
@@ -37,12 +39,7 @@ export default function Home() {
       </section>
 
       <section className="container pt-20" id="courses">
-        {courses.map((course) => (
-          <CourseCard
-            key={course.id}
-            data={course}
-          />
-        ))}
+        <Slider courses={courses} />
       </section>
     </main>
   );

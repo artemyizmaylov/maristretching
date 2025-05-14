@@ -1,5 +1,5 @@
-import localFont from 'next/font/local';
 import "@/app/global.css";
+import localFont from 'next/font/local';
 import Header from "@/app/ui/header.jsx";
 
 export const metadata = {
