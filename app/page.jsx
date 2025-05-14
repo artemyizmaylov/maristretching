@@ -1,4 +1,4 @@
-import { getAllCourses } from "@/api";
+import { getSortedCourses } from "@/api";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +10,7 @@ import CourseCard from "./ui/course-card";
 
 
 export default function Home() {
-  const courses = getAllCourses();
+  const courses = getSortedCourses();
 
   return (
     <main className="py-20 px-4 relative">
