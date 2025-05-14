@@ -1,6 +1,6 @@
-import "@/app/global.css";
+import "./global.css";
 import localFont from 'next/font/local';
-import Header from "@/app/ui/header.jsx";
+import Header from "./ui/header.jsx";
 import Footer from "./ui/footer";
 
 export const metadata = {
@@ -11,32 +11,32 @@ export const metadata = {
 const helveticaNeue = localFont({
   src: [
     {
-      path: './fonts/HelveticaNeueThin.otf',
+      path: '../public/fonts/HelveticaNeueThin.otf',
       style: 'normal',
       weight: '200',
     },
     {
-      path: './fonts/HelveticaNeueLight.otf',
+      path: '../public/fonts/HelveticaNeueLight.otf',
       style: 'normal',
       weight: '300',
     },
     {
-      path: './fonts/HelveticaNeueLightItalic.otf',
+      path: '../public/fonts/HelveticaNeueLightItalic.otf',
       style: 'italic',
       weight: '300',
     },
     {
-      path: './fonts/HelveticaNeueRoman.otf',
+      path: '../public/fonts/HelveticaNeueRoman.otf',
       style: 'normal',
       weight: '400',
     },
     {
-      path: './fonts/HelveticaNeueMedium.otf',
+      path: '../public/fonts/HelveticaNeueMedium.otf',
       style: 'normal',
       weight: '500',
     },
     {
-      path: './fonts/HelveticaNeueBold.otf',
+      path: '../public/fonts/HelveticaNeueBold.otf',
       style: 'normal',
       weight: '600',
     }

@@ -4,9 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Slider from "./ui/slider";
 
-import hero from '@/app/images/hero.webp'
-import about2 from '@/app/images/about-me2.webp';
-import CourseCard from "./ui/course-card";
 import Banner from "./ui/banner";
 
 
@@ -15,7 +12,7 @@ export default function Home() {
 
   return (
     <main className="py-20 px-4 relative">
-      <Image src={hero} alt="#" width={1440} height={967} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
+      <Image src={'/images/hero.webp'} alt="#" width={1440} height={967} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
 
       <section id="hero" className="container full-screen flex flex-col items-center sm:items-baseline pt-10 sm:pt-20 gap-14">
         <h1 className="font-extralight text-4xl sm:text-7xl text-green uppercase">Mari Stretching</h1>
@@ -36,7 +33,7 @@ export default function Home() {
           <h3 className="text-3xl">РАЗУМ</h3>
           <p className="">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asper.</p>
         </div>
-        <Image src={about2} alt="#" width={476} height={639} className="object-contain md:w-1/2" />
+        <Image src={'/images/about-me2.webp'} alt="#" width={476} height={639} className="object-contain md:w-1/2" />
       </section>
 
       <Banner />

@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import about1 from '@/app/images/about-me1.webp';
 
 export default function AboutMe() {
     return (
         <>
             <h2 className="text-pink font-extralight text-4xl sm:text-7xl uppercase pt-10 sm:pt-20">Обо мне</h2>
             <div className='pt-10 sm:pt-20 flex flex-col md:flex-row justify-between items-center gap-20'>
-                <Image src={about1} alt="#" width={476} height={639} className="object-contain" />
+                <Image src={'/images/about-me1.webp'} alt="#" width={476} height={639} className="object-contain" />
                 <div className="flex flex-col gap-6">
                     <p className="text-justify">
                         Меня зовут Мария Дягилева, я врач и тренер.
