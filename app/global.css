@@ -7,6 +7,30 @@
     --swiper-pagination-color: rgb(251 148 129);
 }
 
+.marquee-smooth {
+    overflow: hidden;
+}
+
+.marquee-inner {
+    width: 200%;
+    animation: marquee-smooth 20s linear infinite;
+}
+
+.marquee-inner span {
+    width: 50%;
+    white-space: nowrap;
+}
+
+@keyframes marquee-smooth {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 @layer base {
     body {
         @apply text-black font-light text-xl bg-white relative;

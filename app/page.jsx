@@ -7,6 +7,7 @@ import Slider from "./ui/slider";
 import hero from '@/app/images/hero.webp'
 import about2 from '@/app/images/about-me2.webp';
 import CourseCard from "./ui/course-card";
+import Banner from "./ui/banner";
 
 
 export default function Home() {
@@ -37,6 +38,8 @@ export default function Home() {
         </div>
         <Image src={about2} alt="#" width={476} height={639} className="object-contain md:w-1/2" />
       </section>
+
+      <Banner />
 
       <section className="container pt-20" id="courses">
         <Slider courses={courses} />
