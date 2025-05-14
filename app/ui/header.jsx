@@ -14,7 +14,7 @@ export default function Header() {
 
     const links = [
         ['Главная', '/'],
-        ['Обо мне', '/#about-me'],
+        ['Обо мне', '/about-me'],
         ['Курсы', '/#courses'],
         ['Блог', '/blog'],
         ['Контакты', '/contacts'],
