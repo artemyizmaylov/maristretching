@@ -10,7 +10,7 @@ export default function Contacts() {
     ];
 
     return (
-        <main className="pt-20 px-4 relative container">
+        <main className="py-20 px-4 relative container">
             <h1 className="font-extralight text-5xl md:text-7xl text-center md:text-left uppercase text-green my-20">Mari Stretching</h1>
             <div className="flex justify-between">
                 <p className="md:text-3xl uppercase basis-1/2">Больше анонсов, тренировок и&nbsp;новостей в <Link href="#">telegram</Link>, присоединяйся!</p>

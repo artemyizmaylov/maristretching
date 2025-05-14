@@ -1,6 +1,7 @@
 import "@/app/global.css";
 import localFont from 'next/font/local';
 import Header from "@/app/ui/header.jsx";
+import Footer from "./ui/footer";
 
 export const metadata = {
   title: "Marystretching",
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
       <body className={helveticaNeue.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
