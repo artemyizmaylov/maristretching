@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --swiper-navigation-color: rgb(251 148 129);
+    --swiper-pagination-color: rgb(251 148 129);
+}
+
 @layer base {
     body {
         @apply text-black font-light text-xl bg-white relative;

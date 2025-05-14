@@ -16,13 +16,14 @@ export default function Slider({ courses }) {
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
         >
-            {courses.map((course) => (
-                <SwiperSlide key={course.id}>
-                    <CourseCard data={course} />
-                </SwiperSlide>
-            ))}
-        </Swiper>
+            {
+                courses.map((course) => (
+                    <SwiperSlide key={course.id}>
+                        <CourseCard data={course} />
+                    </SwiperSlide>
+                ))
+            }
+        </Swiper >
     );
 };

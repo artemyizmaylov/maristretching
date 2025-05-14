@@ -13,7 +13,7 @@ export default function Home() {
   const courses = getAllCourses();
 
   return (
-    <main className="pt-20 px-4 relative">
+    <main className="py-20 px-4 relative">
       <Image src={hero} alt="#" width={1440} height={967} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
 
       <section id="hero" className="container full-screen flex flex-col items-center sm:items-baseline pt-10 sm:pt-20 gap-14">

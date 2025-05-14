@@ -14,7 +14,7 @@ export default function Course({ searchParams }) {
                     <h3 className="uppercase text-3xl mb-4">Подойдет тем, кто хочет:</h3>
                     <ul className="flex flex-col gap-6 border-b-whitegreen border-b pb-4">
                         {data.forWhom.map((item) => (
-                            <li className="uppercase list-disc" key={item}>{item}</li>
+                            <li className="uppercase list-disc ml-5" key={item}>{item}</li>
                         ))}
                     </ul>
                     <ul className="border-b-whitegreen border-b pb-6 flex flex-wrap">
@@ -32,7 +32,7 @@ export default function Course({ searchParams }) {
                 <div className="flex gap-6">
                     <ul className="flex flex-col list-disc gap-5">
                         {data.inCourse.map((item) => (
-                            <li className="text-base sm:text-xl uppercase" key={item}>{item}</li>
+                            <li className="text-base sm:text-xl uppercase ml-5" key={item}>{item}</li>
                         ))}
                     </ul>
                     <ul className="flex flex-col gap-8">
