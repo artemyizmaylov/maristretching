@@ -37,7 +37,7 @@ export async function GET() {
             }
         });
 
-        return NextResponse.json(sortedCourses); // Важно: возвращаем JSON
+        return NextResponse.json(sortedCourses);
 
     } catch (error) {
         return NextResponse.json(
@@ -46,33 +46,3 @@ export async function GET() {
         );
     }
 }
-
-// export function getSortedCourses() {
-//     const fileNames = fs.readdirSync(coursesDirectory);
-
-//     const allCoursesData = fileNames.map((fileName) => {
-//         const id = fileName.replace(/\.mdx$/, '');
-
-//         const fullPath = path.join(coursesDirectory, fileName);
-//         const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-//         const matterResult = matter(fileContents);
-//         const content = matterResult.content
-//         const tags = matterResult.data.tags.split(';');
-
-//         return {
-//             id,
-//             content,
-//             ...matterResult.data,
-//             tags,
-//         };
-//     });
-
-//     return allCoursesData.sort((a, b) => {
-//         if (a.date < b.date) {
-//             return 1;
-//         } else {
-//             return -1;
-//         }
-//     });
-// }

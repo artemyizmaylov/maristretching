@@ -10,14 +10,14 @@ export default async function Home() {
   async function loadCourses() {
     try {
       const response = await fetch('http://localhost:3000/api/get-sorted-courses', {
-        next: { revalidate: 0 } // Для App Router
+        next: { revalidate: 0 }
       });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const courses = await response.json(); // Декодируем JSON
+      const courses = await response.json();
 
       return courses;
     } catch (error) {
