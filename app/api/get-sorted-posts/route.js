@@ -35,7 +35,7 @@ export async function GET() {
             }
         });
 
-        return NextResponse.json(sortedPosts); // Важно: возвращаем JSON
+        return NextResponse.json(sortedPosts);
 
     } catch (error) {
         return NextResponse.json(
