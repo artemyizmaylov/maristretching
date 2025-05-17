@@ -1,8 +1,31 @@
 import ArticleCard from "@/app/ui/article-card";
-import { getSortedPostsData } from "@/api";
 
-export default function Blog() {
-    const posts = getSortedPostsData();
+export default async function Blog() {
+
+    async function loadPosts() {
+        try {
+            const response = await fetch('http://localhost:3000/api/get-sorted-posts', {
+                cache: 'no-store', // Важное изменение!
+                next: { revalidate: 0 } // Для App Router
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const posts = await response.json(); // Декодируем JSON
+
+            return posts;
+        } catch (error) {
+            console.error("Fetch error:", error);
+            return [];
+        }
+    }
+
+    const posts = await loadPosts();
+
+    console.log(posts);
+
 
     return (
         <div className="pt-10 sm:pt-20">

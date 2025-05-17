@@ -1,4 +1,4 @@
-import { getSortedCourses } from "@/api";
+import { getSortedCourses } from "@/app/api";
 
 import Image from "next/image";
 import Link from "next/link";

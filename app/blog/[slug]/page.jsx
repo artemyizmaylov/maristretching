@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { marked } from "marked";
-import { getPostData } from "@/api";
+import { getPostData } from "@/app/api";
 
 export default function BlogArticle({ searchParams }) {
     const data = getPostData(searchParams.search);

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getCourseData } from "@/api"
+import { getCourseData } from "@/app/api"
 
 
 export default function Course({ searchParams }) {

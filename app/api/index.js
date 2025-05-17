@@ -7,6 +7,7 @@ const coursesDirectory = path.join(process.cwd(), 'public/courses');
 
 export function getSortedPostsData() {
     const fileNames = fs.readdirSync(postsDirectory);
+
     const allPostsData = fileNames.map((fileName) => {
         const id = fileName.replace(/\.mdx$/, '');
 
