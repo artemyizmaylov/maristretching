@@ -90,7 +90,7 @@ export default async function Home() {
 
       <Banner />
 
-      <section className="container pt-20" id="courses">
+      <section className="container pt-20 animate-fadeIn" id="courses">
         <Slider data={courses} />
       </section>
     </main>

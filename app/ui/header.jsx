@@ -67,7 +67,7 @@ export default function Header() {
     });
 
     return (
-        <header id="header" className={"border-b border-green p-4 fixed w-full top-0 left-0 z-10"} style={{ 'backgroundColor': `rgba(255,249,239,${transparent})` }} ref={headerRef}>
+        <header id="header" className={"border-b border-green p-4 fixed w-full top-0 left-0 z-10 animate-fadeIn"} style={{ 'backgroundColor': `rgba(255,249,239,${transparent})` }} ref={headerRef}>
             <button type="button" className="nav-toggle w-8 h-8 absolute top-10 right-6 lg:hidden z-10" onClick={onMenuButtonClick} ref={btnRef}>
                 <span className="bar-top"></span>
                 <span className="bar-mid"></span>
