@@ -1,5 +1,3 @@
-import { getSortedCourses } from "@/app/api";
-
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "./ui/slider";
@@ -7,8 +5,28 @@ import Slider from "./ui/slider";
 import Banner from "./ui/banner";
 
 
-export default function Home() {
-  const courses = getSortedCourses();
+export default async function Home() {
+
+  async function loadCourses() {
+    try {
+      const response = await fetch('http://localhost:3000/api/get-sorted-courses', {
+        next: { revalidate: 0 } // Для App Router
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const courses = await response.json(); // Декодируем JSON
+
+      return courses;
+    } catch (error) {
+      console.error("Fetch error:", error);
+      return [];
+    }
+  }
+
+  const courses = await loadCourses();
 
   return (
     <main className="py-20 px-4 relative">
@@ -39,7 +57,7 @@ export default function Home() {
       <Banner />
 
       <section className="container pt-20" id="courses">
-        <Slider courses={courses} />
+        <Slider data={courses} />
       </section>
     </main>
   );

@@ -1,7 +1,7 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 import CourseCard from './course-card';
 
 import 'swiper/css';
@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-export default function Slider({ courses }) {
+export default function Slider({ data }) {
     return (
         <Swiper
             modules={[Navigation, Pagination, A11y]}
@@ -18,7 +18,7 @@ export default function Slider({ courses }) {
             pagination={{ clickable: true }}
         >
             {
-                courses.map((course) => (
+                data.map((course) => (
                     <SwiperSlide key={course.id}>
                         <CourseCard data={course} />
                     </SwiperSlide>
