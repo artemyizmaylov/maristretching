@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function AboutMe() {
     return (
-        <div className="max-w-7xl mx-auto py-10 sm:py-20">
+        <div className="max-w-7xl mx-auto py-10 sm:py-20 container">
             {/* Заголовок с анимацией при наведении */}
             <h2 className="text-pink font-extralight text-4xl sm:text-6xl lg:text-7xl uppercase pb-10 sm:pb-16">
                 Обо мне

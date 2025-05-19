@@ -21,7 +21,7 @@ export default async function Blog() {
     const posts = await loadPosts();
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen container">
             {/* Заголовок с плавным появлением */}
             <div className="pt-10 sm:pt-20 animate-fadeIn">
                 <h1 className="uppercase text-green font-extralight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 sm:mb-16 text-left">

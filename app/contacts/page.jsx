@@ -10,7 +10,7 @@ export default function Contacts() {
     ];
 
     return (
-        <main className="py-20 px-4 relative container animate-fadeIn">
+        <div className="container animate-fadeIn">
             <h1 className="font-extralight text-5xl md:text-7xl text-center md:text-left uppercase text-green my-20">Mari Stretching</h1>
             <div className="flex justify-between">
                 <p className="md:text-3xl uppercase basis-1/2">Больше анонсов, тренировок и&nbsp;новостей в <Link href="#">telegram</Link>, присоединяйся!</p>
@@ -31,6 +31,6 @@ export default function Contacts() {
                 </div>
                 <button className="font-semibold md:text-4xl uppercase text-white bg-whitegreen rounded-3xl py-4 w-full max-w-80 self-center sm:self-end hover:bg-pink">Отправить</button>
             </form>
-        </main>
+        </div>
     );
 }

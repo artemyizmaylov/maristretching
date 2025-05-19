@@ -49,7 +49,7 @@ export default async function Home() {
         </Link>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <section className="max-w-7xl mx-auto py-16 sm:py-24">
         <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-stretch">
           <div className="w-full lg:w-1/2 flex flex-col gap-8 sm:gap-10">
             <h2 className="text-pink font-extralight text-4xl sm:text-6xl lg:text-7xl uppercase leading-tight hover:scale-[1.01] transition-transform duration-300">
