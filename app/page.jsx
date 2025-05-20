@@ -29,7 +29,7 @@ export default async function Home() {
 
   return (
     <main className="py-20 px-4 relative">
-      <Image src={'/images/hero.webp'} alt="#" width={1440} height={967} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
+      <Image src={'/images/hero.webp'} alt="#" width={2560} height={1440} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
 
       <section id="hero" className="relative w-full min-h-screen flex flex-col justify-center items-center sm:items-start px-4 sm:px-8 md:px-12 lg:px-20 py-20 gap-8 sm:gap-12 overflow-hidden">
         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-pink/10 blur-3xl -z-10"></div>
@@ -43,7 +43,7 @@ export default async function Home() {
         </p>
         <Link
           className="font-semibold sm:text-2xl text-white px-10 py-6 bg-pink rounded-3xl max-w-[435px] hover:bg-pink-dark transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform animate-fadeIn delay-200 text-center"
-          href="#"
+          href="https://mari-stretching.tilda.ws/spb"
         >
           Занятия в Петербурге
         </Link>

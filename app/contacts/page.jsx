@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Contacts() {
     const links = [
-        ['Вконтакте', '/vk'],
-        ['Telegram', '/telegram'],
-        ['Instagram', '/instagram'],
-        ['Tiktok', '/tiktok'],
-        ['Youtube', '/youtube'],
+        ['Telegram', 'https://t.me/mari_stretching'],
+        ['Youtube', 'https://www.youtube.com/@mari_stretching'],
+        ['Rutube', 'https://rutube.ru/u/maristretching/'],
+        ['Вконтакте', 'https://vk.com/maristretching'],
+        ['Pinterest', 'https://ru.pinterest.com/mari_stretching/'],
     ];
 
     return (
