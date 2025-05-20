@@ -3,6 +3,8 @@ import localFont from 'next/font/local';
 import Header from "./ui/header.jsx";
 import Footer from "./ui/footer";
 
+import Providers from './Providers';
+
 export const metadata = {
   title: "Marystretching",
   description: "Йога и не только",
@@ -48,9 +50,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body className={helveticaNeue.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
