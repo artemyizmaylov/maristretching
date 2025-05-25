@@ -43,6 +43,7 @@ export async function POST(request) {
     const postPath = path.join(process.cwd(), "public/posts", `${slug}.md`);
     await writeFile(postPath, postContent);
 
+    exec('pm2 restart maristretching');
     return NextResponse.json({
         success: true,
         fileName: finalFileName // Можно вернуть новое имя файла для отладки

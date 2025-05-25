@@ -56,5 +56,6 @@ export async function POST(request) {
 
     await writeFile(coursePath, courseContent);
 
+    exec('pm2 restart maristretching');
     return NextResponse.json({ success: true });
 }
