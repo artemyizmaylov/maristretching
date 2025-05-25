@@ -15,7 +15,11 @@
 
 # production
 /build
-/public
+
+# Игнорировать все файлы внутри public/
+public/**/*
+# Но не игнорировать сами папки (пустые директории)
+!public/**/
 
 # misc
 .DS_Store
