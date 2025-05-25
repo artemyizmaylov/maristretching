@@ -24,7 +24,7 @@ export default function CourseCard({ data }) {
                     </Link>
                     <span className="text-4xl font-normal">{data.price}р</span>
                     <Link
-                        className="sm:text-3xl font-semibold uppercase text-white bg-purple rounded-3xl p-5 max-w-md w-full self-center md:self-start"
+                        className="sm:text-3xl font-semibold uppercase text-white bg-purple rounded-3xl p-5 max-w-md w-full self-center md:self-start text-center"
                         href={data.skillspace}
                     >
                         Купить курс

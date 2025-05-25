@@ -10,7 +10,7 @@ export async function POST(request) {
     // Сохранение изображения
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
-    const imagePath = path.join(process.cwd(), "public/uploads", file.name);
+    const imagePath = path.join(process.cwd(), "public/images", file.name);
     await writeFile(imagePath, buffer);
 
     // Создание MDX файла
@@ -18,11 +18,11 @@ export async function POST(request) {
         title: data.get("title"),
         date: new Date().toISOString(),
         author: data.get("author"),
-        image: `/uploads/${file.name}`,
+        image: `/images/${file.name}`,
     });
 
     const slug = data.get("title").toLowerCase().replace(/ /g, "-");
-    const postPath = path.join(process.cwd(), "posts", `${slug}.mdx`);
+    const postPath = path.join(process.cwd(), "public/posts", `${slug}.mdx`);
     await writeFile(postPath, postContent);
 
     return NextResponse.json({ success: true });
