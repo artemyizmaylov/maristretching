@@ -31,7 +31,7 @@ export default function CourseCard({ data }) {
                     </Link>
                 </div>
                 <div className="flex flex-col gap-7 justify-between basis-1/2">
-                    <Image src={data.image} alt="#" width={350} height={350} className="aspect-square object-cover hidden lg:block " />
+                    <Image src={data.image} alt="Изображение" width={350} height={350} className="aspect-square object-cover hidden lg:block " />
                     <ul className="hidden flex-wrap md:flex justify-center lg:justify-start">
                         {data.tags.map((item) => (
                             <li className="pl-3 pr-3 first-of-type:border-l border-r border-l-green text-sm lg:text-xl" key={item}>{item}</li>
