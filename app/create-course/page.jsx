@@ -269,6 +269,8 @@ export default function CreateCourse() {
                     {previewImage && (
                         <div className="mt-2">
                             <Image
+                                width={500}
+                                height={500}
                                 src={previewImage}
                                 alt="Preview"
                                 className="max-w-xs max-h-40 object-contain"
