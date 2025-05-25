@@ -50,7 +50,14 @@ export default function CreateCourse() {
 
     const onSubmit = async (data) => {
         if (!data.image || data.image.length === 0) {
-            setError('Please select an image');
+            setError('Пожалуйста, выберите изображение');
+            return;
+        }
+
+        // Проверка типа файла
+        const file = data.image[0];
+        if (!file.type.startsWith('image/')) {
+            setError('Файл должен быть изображением');
             return;
         }
 
@@ -67,12 +74,12 @@ export default function CreateCourse() {
             formData.append('inCourse', data.inCourse);
             formData.append('h1', data.h1);
             formData.append('h1p', data.h1p);
-            formData.append('h2', data.h1);
-            formData.append('h2p', data.h1p);
-            formData.append('h3', data.h1);
-            formData.append('h3p', data.h1p);
+            formData.append('h2', data.h2);  // Исправлено!
+            formData.append('h2p', data.h2p); // Исправлено!
+            formData.append('h3', data.h3);  // Исправлено!
+            formData.append('h3p', data.h3p); // Исправлено!
             formData.append('annotation', data.annotation);
-            formData.append('image', data.image[0]);
+            formData.append('image', file);  // Передаём файл напрямую
 
             const response = await fetch('/api/courses', {
                 method: 'POST',
@@ -80,12 +87,12 @@ export default function CreateCourse() {
             });
 
             if (!response.ok) {
-                throw new Error('Failed to create course');
+                throw new Error('Ошибка при создании курса');
             }
 
             reset();
             setPreviewImage(null);
-            alert('Course created successfully!');
+            alert('Курс успешно создан!');
         } catch (err) {
             setError(err.message);
         } finally {
