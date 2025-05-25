@@ -9,9 +9,7 @@ export default async function Home() {
 
   async function loadCourses() {
     try {
-      const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-courses`, {
-        next: { revalidate: 0 }
-      });
+      const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-courses`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

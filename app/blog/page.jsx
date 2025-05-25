@@ -1,11 +1,11 @@
 import ArticleCard from "@/app/ui/article-card";
 
+export const dynamic = 'force-dynamic'; // Добавляем эту строку для динамического поведения
+
 export default async function Blog() {
     async function loadPosts() {
         try {
-            const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-posts`, {
-                next: { revalidate: 0 },
-            });
+            const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-posts`);
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -22,13 +22,11 @@ export default async function Blog() {
 
     return (
         <div className="min-h-screen container">
-            {/* Заголовок с плавным появлением */}
             <div className="pt-10 sm:pt-20 animate-fadeIn">
                 <h1 className="uppercase text-green font-extralight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-10 sm:mb-16 text-left">
                     Блог
                 </h1>
 
-                {/* Сетка статей */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
                     {posts.map((post) => (
                         <ArticleCard
@@ -39,7 +37,6 @@ export default async function Blog() {
                     ))}
                 </div>
 
-                {/* Сообщение если нет статей */}
                 {posts.length === 0 && (
                     <div className="text-center py-20 text-gray-500">
                         Пока нет статей в блоге
