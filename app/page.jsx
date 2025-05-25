@@ -42,7 +42,7 @@ export default async function Home() {
           Хочу, чтобы вы полюбили тренировки также, как я люблю их создавать для вас.
         </p>
         <Link
-          className="font-semibold sm:text-2xl text-white px-10 py-6 bg-pink rounded-3xl max-w-[435px] hover:bg-pink-dark transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform animate-fadeIn delay-200 text-center"
+          className="font-semibold sm:text-2xl text-white px-10 py-6 bg-pink rounded-3xl max-w-[435px] hover:bg-pink-dark duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform animate-fadeIn delay-200 text-center"
           href="https://mari-stretching.tilda.ws/spb"
         >
           Занятия в Петербурге
