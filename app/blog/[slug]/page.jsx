@@ -6,7 +6,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'; // Для Next.js 13+
 const components = {
     h1: ({ children }) => <h1 className="text-4xl font-bold text-green mb-6">{children}</h1>,
     h2: ({ children }) => <h2 className="text-3xl font-semibold text-pink mt-10 mb-4">{children}</h2>,
-    h3: ({ children }) => <h3 className="text-2xl font-medium text-gray-700 mt-8 mb-3">{children}</h3>,
+    h3: ({ children }) => <h3 className="text-2xl font-medium text-pink mt-8 mb-3">{children}</h3>,
     p: ({ children }) => <p className="text-lg leading-relaxed text-gray-800 mb-5">{children}</p>,
     a: ({ href, children }) => (
         <a href={href} className="text-pink underline hover:text-green transition-colors">
