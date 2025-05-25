@@ -2,7 +2,7 @@ import Faq from "@/app/ui/faq.jsx"
 
 export default function CoursesLayout({ children }) {
     return (
-        <main className="pt-20 px-4 relative">
+        <main className="py-20 px-4 relative">
             {children}
             <section className="pt-20 container">
                 <h2 className="text-4xl sm:text-7xl text-green font-extralight uppercase mb-10">Часто задаваемые вопросы</h2>

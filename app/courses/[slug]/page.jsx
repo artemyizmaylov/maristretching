@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { getCourseData } from "@/app/api"
 
 
@@ -23,7 +24,12 @@ export default function Course({ searchParams }) {
                         ))}
                     </ul>
                     <span className="text-5xl">{data.price}р</span>
-                    <button type="button" className="text-3xl font-semibold uppercase text-white bg-purple rounded-3xl py-8">купить курс</button>
+                    <Link
+                        className="text-3xl font-semibold uppercase text-white bg-purple rounded-3xl py-8 text-center"
+                        href={data.skillspace}
+                    >
+                        купить курс
+                    </Link>
                 </div>
             </div>
 

@@ -23,7 +23,12 @@ export default function CourseCard({ data }) {
                         Подробнее
                     </Link>
                     <span className="text-4xl font-normal">{data.price}р</span>
-                    <button className="sm:text-3xl font-semibold uppercase text-white bg-purple rounded-3xl p-5 max-w-md w-full self-center md:self-start">Купить курс</button>
+                    <Link
+                        className="sm:text-3xl font-semibold uppercase text-white bg-purple rounded-3xl p-5 max-w-md w-full self-center md:self-start"
+                        href={data.skillspace}
+                    >
+                        Купить курс
+                    </Link>
                 </div>
                 <div className="flex flex-col gap-7 justify-between basis-1/2">
                     <Image src={data.image} alt="#" width={350} height={350} className="aspect-square object-cover hidden lg:block " />
