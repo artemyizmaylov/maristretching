@@ -75,7 +75,7 @@ export default function Contacts() {
                 </ul>
             </div>
             <form className="flex flex-col pt-20" onSubmit={handleSubmit}>
-                <h2 className="font-extralight md:text-6xl text-whitepurple uppercase mb-10">Обратная связь</h2>
+                <h2 className="font-extralight md:text-6xl text-purple uppercase mb-10">Обратная связь</h2>
                 <p className="md:text-3xl mb-20">Пожалуйста, заполните форму обратной связи, если у вас остались какие-то вопросы.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-6 sm:grid-rows-3 grid-flow-col gap-x-16 gap-y-8 mb-20">
                     <input

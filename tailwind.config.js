@@ -12,7 +12,6 @@ module.exports = {
       whitegreen: '#9BB3AB',
       pink: '#FB9481',
       purple: '#A3B1DF',
-      whitepurple: '#7587C2',
       white: '#FFF9EF',
       black: '#555547',
     },
