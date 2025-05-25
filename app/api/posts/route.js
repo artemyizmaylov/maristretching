@@ -17,7 +17,6 @@ export async function POST(request) {
     const postContent = matter.stringify(data.get("content"), {
         title: data.get("title"),
         date: new Date().toISOString(),
-        author: data.get("author"),
         image: `/images/${file.name}`,
     });
 
