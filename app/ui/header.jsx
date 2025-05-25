@@ -80,7 +80,7 @@ export default function Header() {
                         <Link key={title} href={url} onClick={onLinksClick} className={`${linksStyle}${pathname === url ? ' text-pink underline' : ''}`}>{title}</Link>
                     ))}
                 </nav>
-                <Link href="#" className="text-green uppercase lg:border border-green rounded-full pt-10 lg:p-4 flex-grow lg:flex-grow-0">Telegram</Link>
+                <Link href="https://t.me/mari_stretching" className="text-green uppercase lg:border border-green rounded-full pt-10 lg:p-4 flex-grow lg:flex-grow-0 hover:text-pink hover:border-pink">Telegram</Link>
             </div>
         </header>
     );
