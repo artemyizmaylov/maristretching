@@ -8,6 +8,9 @@ export async function middleware(req) {
     if (pathname.startsWith("/create-post") && !session) {
         return NextResponse.redirect(new URL("/api/auth/signin?callbackUrl=/create-post", req.url));
     }
+    if (pathname.startsWith("/create-course") && !session) {
+        return NextResponse.redirect(new URL("/api/auth/signin?callbackUrl=/create-course", req.url));
+    }
 
     return NextResponse.next();
 }

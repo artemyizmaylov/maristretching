@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function CourseCard({ data }) {
     return (
         <div className="container pb-12 max-w-[70%] md:max-w-[85%]">
-            <h3 className="font-extralight text-4xl sm:text-7xl text-pink uppercase text-center pb-2 sm:pb-7 lg:pb-20">{data.title}</h3>
+            <h3 className="font-extralight text-4xl sm:text-7xl text-pink uppercase text-center pb-2 sm:pb-7 lg:pb-20 leading-[1.3]">{data.title}</h3>
             <div className="flex flex-col-reverse lg:flex-row gap-2 sm:gap-7">
                 <div className="flex flex-col gap-7 justify-between basis-1/2">
                     <p className="text-left">{data.annotation}</p>

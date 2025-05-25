@@ -21,6 +21,8 @@ export const authOptions = {
         async redirect({ url, baseUrl }) {
             if (url.startsWith("/create-post")) return url;
             if (url.startsWith(baseUrl)) return `${baseUrl}/create-post`;
+            if (url.startsWith("/create-course")) return url;
+            if (url.startsWith(baseUrl)) return `${baseUrl}/create-course`;
             return baseUrl;
         },
     }

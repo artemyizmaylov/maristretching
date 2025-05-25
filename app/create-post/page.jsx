@@ -11,7 +11,7 @@ export default function CreatePost() {
     const [error, setError] = useState(null);
     const [previewImage, setPreviewImage] = useState(null);
 
-    const { register, handleSubmit, watch, reset } = useForm({
+    const { register, handleSubmit, reset } = useForm({
         defaultValues: {
             title: '',
             content: '',

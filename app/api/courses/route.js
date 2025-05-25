@@ -15,15 +15,28 @@ export async function POST(request) {
     await writeFile(imagePath, buffer);
 
     // Создание MDX файла
-    const postContent = matter.stringify(data.get("content"), {
+    const courseContent = matter.stringify('', {
         title: data.get("title"),
         date: new Date().toISOString(),
+        skillspace: data.get("skillspace"),
+        price: data.get("price"),
+        tags: data.get("tags"),
+        forWhom: data.get("forWhom"),
+        inCourse: data.get("inCourse"),
+        h1: data.get("h1"),
+        h1p: data.get("h1p"),
+        h2: data.get("h2"),
+        h2p: data.get("h2p"),
+        h3: data.get("h3"),
+        h3p: data.get("h3p"),
+        annotation: data.get("annotation"),
         image: `/images/${file.name}`,
     });
 
     const slug = transliteration(data.get("title"));
-    const postPath = path.join(process.cwd(), "public/posts", `${slug}.md`);
-    await writeFile(postPath, postContent);
+    const coursePath = path.join(process.cwd(), "public/courses", `${slug}.md`);
+
+    await writeFile(coursePath, courseContent);
 
     return NextResponse.json({ success: true });
 }
