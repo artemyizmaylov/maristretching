@@ -1,6 +1,9 @@
+// app/blog/[slug]/page.js
 import Image from "next/image";
-import { getPostData } from "@/app/api";
-import { MDXRemote } from 'next-mdx-remote/rsc'; // Для Next.js 13+
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { readFileSync } from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
 // Компоненты для MDX
 const components = {
@@ -34,11 +37,24 @@ const components = {
     ),
 };
 
-export default function BlogArticle({ searchParams }) {
-    const data = getPostData(searchParams.search);
+async function getPostData(slug) {
+    const postsDirectory = path.join(process.cwd(), 'public/posts');
+    const fullPath = path.join(postsDirectory, `${slug}.md`);
+    const fileContents = readFileSync(fullPath, 'utf-8');
+
+    const matterResult = matter(fileContents);
+
+    return {
+        content: matterResult.content,
+        ...matterResult.data
+    };
+}
+
+export default async function BlogArticle({ params }) {
+    const data = await getPostData(params.slug);
 
     return (
-        <article className="py-20 max-w-4xl">
+        <article className="py-20 max-w-4xl mx-auto">
             <div className="mb-16">
                 <h1 className="uppercase text-pink font-extralight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">
                     {data.title}
@@ -50,7 +66,6 @@ export default function BlogArticle({ searchParams }) {
                 )}
             </div>
 
-            {/* Основное содержимое */}
             <div className="flex flex-col lg:flex-row gap-12">
                 {data.image && (
                     <div className="lg:w-1/3 flex-shrink-0">
@@ -66,7 +81,6 @@ export default function BlogArticle({ searchParams }) {
                 )}
 
                 <div className="flex-1 prose prose-lg max-w-none">
-                    {/* Используем MDXRemote для рендеринга с компонентами */}
                     <MDXRemote source={data.content} components={components} />
                 </div>
             </div>

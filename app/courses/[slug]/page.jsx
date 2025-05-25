@@ -1,10 +1,30 @@
+import { readFileSync } from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+
 import Image from "next/image";
 import Link from "next/link";
-import { getCourseData } from "@/app/api"
 
+async function getCourseData(slug) {
+    const coursesDirectory = path.join(process.cwd(), 'public/courses');
+    const fullPath = path.join(coursesDirectory, `${slug}.md`);
+    const fileContents = readFileSync(fullPath, 'utf-8');
 
-export default function Course({ searchParams }) {
-    const data = getCourseData(searchParams.search);
+    const matterResult = matter(fileContents);
+    const inCourse = matterResult.data.inCourse?.split(';') || [];
+    const forWhom = matterResult.data.forWhom?.split(';') || [];
+    const tags = matterResult.data.tags?.split(';') || [];
+
+    return {
+        ...matterResult.data,
+        inCourse,
+        tags,
+        forWhom,
+    };
+}
+
+export default async function Course({ params }) {
+    const data = await getCourseData(params.slug);
 
     return (
         <section className="pt-20 container">

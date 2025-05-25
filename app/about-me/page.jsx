@@ -19,7 +19,7 @@ export default function AboutMe() {
                         alt="Мария Дягилева - врач и тренер"
                         width={600}
                         height={800}
-                        className="rounded-lg shadow-xl object-cover w-full h-auto transition-all duration-500 group-hover:shadow-2xl"
+                        className="h-[calc(100vh-160px)] object-cover object-top rounded-lg shadow-xl w-full transition-all duration-500 group-hover:shadow-2xl"
                         priority
                     />
                 </div>

@@ -5,7 +5,16 @@ export default function ArticleCard({ data }) {
 
     return (
         <div className="max-w-[407px] flex flex-col gap-4">
-            <Image src={data.image} width={400} height={400} alt="Изображение" className="aspect-square object-cover" />
+            <Link href={
+                {
+                    pathname: `/blog/${data.id}`,
+                    query: {
+                        search: data.id
+                    }
+                }
+            }>
+                <Image src={data.image} width={400} height={400} alt="Изображение" className="aspect-square object-cover" />
+            </Link>
             <Link href={
                 {
                     pathname: `/blog/${data.id}`,
