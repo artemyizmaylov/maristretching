@@ -22,7 +22,7 @@ export default function Contacts() {
             </div>
             <form className="flex flex-col pt-20">
                 <h2 className="font-extralight md:text-6xl text-whitepurple uppercase mb-10">Обратная связь</h2>
-                <p className="md:text-3xl mb-20">Пожалуйста, заполните форму обратной связи, если у вас остались какие-то вопросы. Или напишите нам на <Link href="#">email</Link></p>
+                <p className="md:text-3xl mb-20">Пожалуйста, заполните форму обратной связи, если у вас остались какие-то вопросы.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-6 sm:grid-rows-3 grid-flow-col gap-x-16 gap-y-8 mb-20">
                     <input type="text" name="name" id="name" placeholder="Имя" className="form-input bg-white border-x-0 border-t-0 placeholder:font-extralight md:text-xl placeholder:uppercase md:placeholder:text-3xl focus:border-b-pink focus:placeholder:text-base px-0" style={{ 'boxShadow': 'none', 'outline': 'none' }} />
                     <input type="email" name="email" id="email" placeholder="Email" className="form-input bg-white border-x-0 border-t-0 placeholder:font-extralight md:text-xl placeholder:uppercase md:placeholder:text-3xl focus:border-b-pink focus:placeholder:text-base px-0" style={{ 'boxShadow': 'none', 'outline': 'none' }} />

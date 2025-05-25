@@ -133,6 +133,18 @@ export default function AboutMe() {
                                 <p className="text-gray-600">100 000 подписчиков на YouTube, обучение нутрициологии, очные занятия</p>
                             </div>
                         </div>
+
+                        {/* 2023 */}
+                        <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12">
+                            <div className="sm:absolute left-4 sm:left-1/2 sm:-translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-pink text-white font-medium text-xs">
+                                2023
+                            </div>
+                            <div className="sm:w-1/2 sm:pr-12 sm:mt-0 sm:text-right ml-12 sm:ml-0">
+                                <p className="text-lg sm:text-xl font-medium text-gray-900">Первый курс и двигательная терапия</p>
+                                <p className="text-gray-600">Выпуск курсов, углубление в терапию</p>
+                            </div>
+                            <div className="sm:w-1/2 sm:pl-12 hidden sm:block"></div>
+                        </div>
                     </div>
                 </div>
             </div>
