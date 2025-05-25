@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic'; // Добавляем эту строк�
 
 async function loadPosts() {
     try {
-        const response = await fetch('http://localhost:80/api/get-sorted-posts');
+        const response = await fetch(`${process.env.LOCAL_ADDRES}/api/get-sorted-posts`);
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
