@@ -51,7 +51,8 @@ async function getPostData(slug) {
 }
 
 export default async function BlogArticle({ params }) {
-    const data = await getPostData(params.slug);
+    const { slug } = await params;
+    const data = await getPostData(slug);
 
     return (
         <article className="py-20 max-w-4xl mx-auto">

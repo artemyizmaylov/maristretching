@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
+import Image from 'next/image';
 
 export default function CreateCourse() {
     const { data: status } = useSession();
@@ -260,7 +261,7 @@ export default function CreateCourse() {
                     />
                     {previewImage && (
                         <div className="mt-2">
-                            <img
+                            <Image
                                 src={previewImage}
                                 alt="Preview"
                                 className="max-w-xs max-h-40 object-contain"

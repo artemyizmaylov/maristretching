@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
+import Image from 'next/image';
 
-export default function CreatePost() {
+export default function CreatePost() {  // Removed async here
     const { data: status } = useSession();
     const router = useRouter();
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -106,10 +107,12 @@ export default function CreatePost() {
                     />
                     {previewImage && (
                         <div className="mt-2">
-                            <img
+                            <Image
                                 src={previewImage}
                                 alt="Preview"
                                 className="max-w-xs max-h-40 object-contain"
+                                width={320}
+                                height={160}
                             />
                         </div>
                     )}

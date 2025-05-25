@@ -87,7 +87,7 @@ export default function Contacts() {
                         onChange={handleChange}
                         required
                         className="form-input bg-white border-x-0 border-t-0 placeholder:font-extralight md:text-xl placeholder:uppercase md:placeholder:text-3xl focus:border-b-pink focus:placeholder:text-base px-0"
-                        style={{ 'boxShadow': 'none', 'outline': 'none' }}
+                        style={{ boxShadow: 'none', outline: 'none' }}
                     />
                     <input
                         type="email"
@@ -98,7 +98,7 @@ export default function Contacts() {
                         onChange={handleChange}
                         required
                         className="form-input bg-white border-x-0 border-t-0 placeholder:font-extralight md:text-xl placeholder:uppercase md:placeholder:text-3xl focus:border-b-pink focus:placeholder:text-base px-0"
-                        style={{ 'boxShadow': 'none', 'outline': 'none' }}
+                        style={{ boxShadow: 'none', outline: 'none' }}
                     />
                     <input
                         type="tel"
@@ -108,7 +108,7 @@ export default function Contacts() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="form-input bg-white border-x-0 border-t-0 placeholder:font-extralight md:text-xl placeholder:uppercase md:placeholder:text-3xl focus:border-b-pink focus:placeholder:text-base px-0"
-                        style={{ 'boxShadow': 'none', 'outline': 'none' }}
+                        style={{ boxShadow: 'none', outline: 'none' }}
                     />
                     <textarea
                         name="text"
@@ -119,7 +119,7 @@ export default function Contacts() {
                         required
                         rows="5"
                         className="form-input bg-white border-x-0 border-t-0 placeholder:font-extralight md:text-xl placeholder:uppercase md:placeholder:text-3xl focus:border-b-pink focus:placeholder:text-base placeholder:align-top px-0 row-span-3"
-                        style={{ 'boxShadow': 'none', 'outline': 'none' }}
+                        style={{ boxShadow: 'none', outline: 'none' }}
                     />
                 </div>
                 {message && (
