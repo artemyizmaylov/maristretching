@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,7 +17,7 @@ module.exports = {
       black: '#555547',
     },
     fontFamily: {
-      sans: ['var(--helveticaNeue)'],
+      sans: ['var(--helveticaNeue)', ...fontFamily.sans],
     },
     container: {
       center: true,

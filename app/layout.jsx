@@ -13,36 +13,33 @@ export const metadata = {
 const helveticaNeue = localFont({
   src: [
     {
-      path: '../public/fonts/HelveticaNeueThin.otf',
+      path: './fonts/HelveticaNeueThin.otf',
       style: 'normal',
       weight: '200',
     },
     {
-      path: '../public/fonts/HelveticaNeueLight.otf',
+      path: './fonts/HelveticaNeueLight.otf',
       style: 'normal',
       weight: '300',
     },
     {
-      path: '../public/fonts/HelveticaNeueLightItalic.otf',
-      style: 'italic',
-      weight: '300',
-    },
-    {
-      path: '../public/fonts/HelveticaNeueRoman.otf',
+      path: './fonts/HelveticaNeueRoman.otf',
       style: 'normal',
       weight: '400',
     },
     {
-      path: '../public/fonts/HelveticaNeueMedium.otf',
+      path: './fonts/HelveticaNeueMedium.otf',
       style: 'normal',
       weight: '500',
     },
     {
-      path: '../public/fonts/HelveticaNeueBold.otf',
+      path: './fonts/HelveticaNeueBold.otf',
       style: 'normal',
       weight: '600',
     }
   ],
+  display: 'swap',
+  preload: false,
   variable: '--helveticaNeue',
 })
 
