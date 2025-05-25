@@ -194,13 +194,13 @@ export default function CreateCourse() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="h2p" className="block text-sm font-medium mb-1">
-                        Текст
+                    <label htmlFor="h1p" className="block text-sm font-medium mb-1">
+                        Текст 1
                     </label>
                     <input
-                        {...register('h2p', { required: 'h2p is required' })}
+                        {...register('h1p', { required: 'h1p is required' })}
                         type="text"
-                        id="h2p"
+                        id="h1p"
                         className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
                         placeholder="Введите текст"
                     />
@@ -219,7 +219,7 @@ export default function CreateCourse() {
                 </div>
                 <div>
                     <label htmlFor="h2p" className="block text-sm font-medium mb-1">
-                        Текст
+                        Текст 2
                     </label>
                     <input
                         {...register('h2p', { required: 'h2p is required' })}
@@ -241,6 +241,19 @@ export default function CreateCourse() {
                         placeholder="Введите заголовок"
                     />
                 </div>
+                <div>
+                    <label htmlFor="h3p" className="block text-sm font-medium mb-1">
+                        Текст 3
+                    </label>
+                    <input
+                        {...register('h3p', { required: 'h3p is required' })}
+                        type="text"
+                        id="h3p"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите текст"
+                    />
+                </div>
+
                 <div>
                     <label htmlFor="annotation" className="block text-sm font-medium mb-1">
                         Введите аннотацию
