@@ -21,7 +21,7 @@ export async function GET() {
                 const tags = matterResult.data.tags.split(';');
 
                 return {
-                    id: fileName.replace('.mdx', ''),
+                    id: fileName.replace('.md', ''),
                     content,
                     ...matterResult.data,
                     tags,

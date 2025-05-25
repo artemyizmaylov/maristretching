@@ -22,7 +22,7 @@ export async function POST(request) {
     });
 
     const slug = data.get("title").toLowerCase().replace(/ /g, "-");
-    const postPath = path.join(process.cwd(), "public/posts", `${slug}.mdx`);
+    const postPath = path.join(process.cwd(), "public/posts", `${slug}.md`);
     await writeFile(postPath, postContent);
 
     return NextResponse.json({ success: true });

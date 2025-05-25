@@ -6,7 +6,7 @@ const postsDirectory = path.join(process.cwd(), 'public/posts');
 const coursesDirectory = path.join(process.cwd(), 'public/courses');
 
 export function getPostData(name) {
-    const fullPath = path.join(postsDirectory, `${name}.mdx`);
+    const fullPath = path.join(postsDirectory, `${name}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf-8');
 
     const matterResult = matter(fileContents);
@@ -19,7 +19,7 @@ export function getPostData(name) {
 }
 
 export function getCourseData(name) {
-    const fullPath = path.join(coursesDirectory, `${name}.mdx`);
+    const fullPath = path.join(coursesDirectory, `${name}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf-8');
 
     const matterResult = matter(fileContents);

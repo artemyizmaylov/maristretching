@@ -20,7 +20,7 @@ export async function GET() {
                 const content = matterResult.content
 
                 return {
-                    id: fileName.replace('.mdx', ''),
+                    id: fileName.replace('.md', ''),
                     content,
                     ...matterResult.data
                 };
