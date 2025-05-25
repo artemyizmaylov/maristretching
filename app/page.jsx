@@ -5,25 +5,26 @@ import Banner from "./ui/banner";
 import heroImg from "./images/hero.webp"
 import aboutMe from './images/about-me1.webp'
 
-export default async function Home() {
+export const dynamic = 'force-dynamic'; // Добавляем эту строку для динамического поведения
 
-  async function loadCourses() {
-    try {
-      const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-courses`);
+async function loadCourses() {
+  try {
+    const response = await fetch(`http://localhost:3000/api/get-sorted-courses`);
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const courses = await response.json();
-
-      return courses;
-    } catch (error) {
-      console.error("Fetch error:", error);
-      return [];
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-  }
 
+    const courses = await response.json();
+
+    return courses;
+  } catch (error) {
+    console.error("Fetch error:", error);
+    return [];
+  }
+}
+
+export default async function Home() {
   const courses = await loadCourses();
 
   return (

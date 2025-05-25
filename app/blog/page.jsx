@@ -2,21 +2,22 @@ import ArticleCard from "@/app/ui/article-card";
 
 export const dynamic = 'force-dynamic'; // Добавляем эту строку для динамического поведения
 
-export default async function Blog() {
-    async function loadPosts() {
-        try {
-            const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-posts`);
+async function loadPosts() {
+    try {
+        const response = await fetch(`http://localhost:3000/api/get-sorted-posts`);
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            return await response.json();
-        } catch (error) {
-            console.error("Fetch error:", error);
-            return [];
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
+
+        return await response.json();
+    } catch (error) {
+        console.error("Fetch error:", error);
+        return [];
     }
+}
+
+export default async function Blog() {
 
     const posts = await loadPosts();
 
