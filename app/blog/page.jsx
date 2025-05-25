@@ -3,7 +3,7 @@ import ArticleCard from "@/app/ui/article-card";
 export default async function Blog() {
     async function loadPosts() {
         try {
-            const response = await fetch(`http://localhost:3000/api/get-sorted-posts`, {
+            const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-posts`, {
                 next: { revalidate: 0 },
             });
 

@@ -9,7 +9,7 @@ export default async function Home() {
 
   async function loadCourses() {
     try {
-      const response = await fetch('http://localhost:3000/api/get-sorted-courses', {
+      const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-courses`, {
         next: { revalidate: 0 }
       });
 
