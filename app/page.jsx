@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic'; // Добавляем эту строк�
 
 async function loadCourses() {
   try {
-    const response = await fetch(`/api/get-sorted-courses`);
+    const response = await fetch('http://localhost:80/api/get-sorted-courses');
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
