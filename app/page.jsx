@@ -28,7 +28,7 @@ export default async function Home() {
   const courses = await loadCourses();
 
   return (
-    <main className="py-20 px-4 relative">
+    <main className="py-20 px-4 relative overflow-hidden">
       <Image src={'/images/hero.webp'} alt="#" width={4531} height={3021} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
 
       <section id="hero" className="relative w-full min-h-screen flex flex-col justify-center items-center sm:items-start px-4 sm:px-8 md:px-12 lg:px-20 py-20 gap-8 sm:gap-12 overflow-hidden">

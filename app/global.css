@@ -8,17 +8,21 @@
 }
 
 .marquee-smooth {
-    overflow: hidden;
+    animation: marquee 20s linear infinite;
 }
 
 .marquee-inner {
-    width: 200%;
-    animation: marquee-smooth 20s linear infinite;
+    display: inline-block;
 }
 
-.marquee-inner span {
-    width: 50%;
-    white-space: nowrap;
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @keyframes marquee-smooth {
