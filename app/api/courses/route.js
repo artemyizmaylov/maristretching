@@ -3,6 +3,7 @@ import { writeFile } from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import transliteration from "../utils/transliteration";
+import { revalidatePath } from 'next/cache';
 
 export async function POST(request) {
     const data = await request.formData();
@@ -29,6 +30,7 @@ export async function POST(request) {
     const buffer = Buffer.from(bytes);
     const imagePath = path.join(process.cwd(), "public/images", finalFileName);
     await writeFile(imagePath, buffer);
+    revalidatePath('/images');
 
     // Создание MDX файла
     const courseContent = matter.stringify('', {
