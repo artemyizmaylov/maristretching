@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import transliteration from "../utils/transliteration";
 import { revalidatePath } from 'next/cache';
+import { exec } from "child_process";
 
 export async function POST(request) {
     const data = await request.formData();
