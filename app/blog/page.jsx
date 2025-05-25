@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic'; // Добавляем эту строк�
 
 async function loadPosts() {
     try {
-        const response = await fetch(`http://localhost:3000/api/get-sorted-posts`);
+        const response = await fetch(`${process.env.NEXTAUTH_URL}/api/get-sorted-posts`);
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
