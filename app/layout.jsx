@@ -3,11 +3,12 @@ import localFont from 'next/font/local';
 import Header from "./ui/header.jsx";
 import Footer from "./ui/footer";
 
-import Providers from './Providers';
+import Providers from './components/Providers';
 
 export const metadata = {
-  title: "Marystretching",
+  title: "maristretching",
   description: "Йога и не только",
+  keywords: "йога, растяжка, спорт"
 };
 
 const helveticaNeue = localFont({
