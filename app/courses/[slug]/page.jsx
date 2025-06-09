@@ -40,14 +40,15 @@ export default async function CoursePage({ params }) {
         <section className="pt-20 container">
             <h2 className="text-pink font-extralight text-4xl sm:text-7xl uppercase">О курсе {data.title}</h2>
             <div className="flex flex-col lg:flex-row items-center justify-center lg:items-stretch lg:justify-between pt-10 gap-6">
-                <Image
-                    src={data.image}
-                    alt="Изображение курса"
-                    width={530}
-                    height={620}
-                    className="w-[530px] h-[620px] object-cover"
-                    priority
-                />
+                <div className='relative w-full h-[530px]'>
+                    <Image
+                        src={data.image}
+                        alt="Изображение курса"
+                        fill
+                        className="w-[530px] h-[620px] object-cover"
+                        priority
+                    />
+                </div>
                 <div className="flex flex-col justify-between gap-6">
                     <h3 className="uppercase text-3xl mb-4">Подойдет тем, кто хочет:</h3>
                     <ul className="flex flex-col gap-6 border-b-whitegreen border-b pb-4">
