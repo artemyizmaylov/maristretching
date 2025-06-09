@@ -39,7 +39,7 @@ export default function CourseCard({ data }) {
                             }
                         }
                     }
-                        className="relative w-full h-full">
+                        className="relative w-full h-full hidden lg:block">
                         <Image src={data.image} alt="Изображение" fill className="aspect-square object-cover hidden lg:block " />
                     </Link>
                     <ul className="hidden flex-wrap md:flex justify-center lg:justify-start">
