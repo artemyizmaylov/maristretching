@@ -15,8 +15,8 @@ export const authOptions = {
     ],
     callbacks: {
         async signIn({ user }) {
-            const isAllowed = user.email === process.env.ALLOWED_USER_EMAIL;
-            return isAllowed ? true : false;
+            const allowedEmails = process.env.ALLOWED_USER_EMAIL.split(',');
+            return allowedEmails.includes(user.email) ? true : false;
         },
         async redirect({ url, baseUrl }) {
             if (url.startsWith("/create-post")) return url;
