@@ -30,7 +30,7 @@ export default function CourseCard({ data }) {
                         Купить курс
                     </Link>
                 </div>
-                <div className="flex flex-col gap-7 justify-between basis-1/2">
+                <div className="flex flex-col gap-7 justify-between basis-1/2 h-[450px]">
                     <Link href={
                         {
                             pathname: `/courses/${data.id}`,
@@ -38,8 +38,9 @@ export default function CourseCard({ data }) {
                                 search: data.id
                             }
                         }
-                    }>
-                        <Image src={data.image} alt="Изображение" width={350} height={350} className="aspect-square object-cover hidden lg:block " />
+                    }
+                        className="relative w-full h-full">
+                        <Image src={data.image} alt="Изображение" fill className="aspect-square object-cover hidden lg:block " />
                     </Link>
                     <ul className="hidden flex-wrap md:flex justify-center lg:justify-start">
                         {data.tags.map((item) => (
