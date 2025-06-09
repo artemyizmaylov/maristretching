@@ -27,7 +27,17 @@ export default function CreateCourse() {
             h3: '',
             h3p: '',
             annotation: '',
-            image: null
+            image: null,
+            question1: '',
+            question1text: '',
+            question2: '',
+            question2text: '',
+            question3: '',
+            question3text: '',
+            question4: '',
+            question4text: '',
+            question5: '',
+            question5text: '',
         }
     });
 
@@ -74,12 +84,22 @@ export default function CreateCourse() {
             formData.append('inCourse', data.inCourse);
             formData.append('h1', data.h1);
             formData.append('h1p', data.h1p);
-            formData.append('h2', data.h2);  // Исправлено!
-            formData.append('h2p', data.h2p); // Исправлено!
-            formData.append('h3', data.h3);  // Исправлено!
-            formData.append('h3p', data.h3p); // Исправлено!
+            formData.append('h2', data.h2);
+            formData.append('h2p', data.h2p);
+            formData.append('h3', data.h3);
+            formData.append('h3p', data.h3p);
             formData.append('annotation', data.annotation);
-            formData.append('image', file);  // Передаём файл напрямую
+            formData.append('image', file);
+            formData.append('question1', data.question1);
+            formData.append('question1text', data.question1text);
+            formData.append('question2', data.question2);
+            formData.append('question2text', data.question2text);
+            formData.append('question3', data.question3);
+            formData.append('question3text', data.question3text);
+            formData.append('question4', data.question4);
+            formData.append('question4text', data.question4text);
+            formData.append('question5', data.question5);
+            formData.append('question5text', data.question5text);
 
             const response = await fetch('/api/courses', {
                 method: 'POST',
@@ -290,6 +310,133 @@ export default function CreateCourse() {
                             />
                         </div>
                     )}
+                </div>
+
+                <div>------</div>
+
+                <div>
+                    <label htmlFor="question1" className="block text-sm font-medium mb-1">
+                        Введите вопрос 1
+                    </label>
+                    <input
+                        {...register('question1', { required: 'question1 is required' })}
+                        type="text"
+                        id="question1"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите вопрос 1"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="question1text" className="block text-sm font-medium mb-1">
+                        Текст вопроса
+                    </label>
+                    <input
+                        {...register('question1text', { required: 'question1text is required' })}
+                        type="text"
+                        id="question1text"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите текст"
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="question2" className="block text-sm font-medium mb-1">
+                        Введите вопрос 2
+                    </label>
+                    <input
+                        {...register('question2', { required: 'question2 is required' })}
+                        type="text"
+                        id="question2"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите вопрос 2"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="question2text" className="block text-sm font-medium mb-1">
+                        Текст вопроса
+                    </label>
+                    <input
+                        {...register('question2text', { required: 'question2text is required' })}
+                        type="text"
+                        id="question2text"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите текст"
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="question3" className="block text-sm font-medium mb-1">
+                        Введите вопрос 3
+                    </label>
+                    <input
+                        {...register('question3', { required: 'question3 is required' })}
+                        type="text"
+                        id="question3"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите вопрос 3"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="question3text" className="block text-sm font-medium mb-1">
+                        Текст вопроса
+                    </label>
+                    <input
+                        {...register('question3text', { required: 'question3text is required' })}
+                        type="text"
+                        id="question3text"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите текст"
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="question4" className="block text-sm font-medium mb-1">
+                        Введите вопрос 4
+                    </label>
+                    <input
+                        {...register('question4', { required: 'question4 is required' })}
+                        type="text"
+                        id="question4"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите вопрос 4"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="question4text" className="block text-sm font-medium mb-1">
+                        Текст вопроса
+                    </label>
+                    <input
+                        {...register('question4text', { required: 'question4text is required' })}
+                        type="text"
+                        id="question4text"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите текст"
+                    />
+                </div>
+
+                <div>
+                    <label htmlFor="question5" className="block text-sm font-medium mb-1">
+                        Введите вопрос 5
+                    </label>
+                    <input
+                        {...register('question5', { required: 'question5 is required' })}
+                        type="text"
+                        id="question5"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите вопрос 5"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="question5text" className="block text-sm font-medium mb-1">
+                        Текст вопроса
+                    </label>
+                    <input
+                        {...register('question5text', { required: 'question5text is required' })}
+                        type="text"
+                        id="question5text"
+                        className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+                        placeholder="Введите текст"
+                    />
                 </div>
 
                 {error && (

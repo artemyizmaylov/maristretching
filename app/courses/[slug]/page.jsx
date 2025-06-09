@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Image from "next/image";
 import Link from "next/link";
+import Faq from '@/app/ui/faq';
 
 async function getCourseData(slug) {
     try {
@@ -100,6 +101,32 @@ export default async function CoursePage({ params }) {
                         )}
                     </ul>
                 </div>
+            </section>
+
+            <section className="pt-20 container">
+                <h2 className="text-4xl sm:text-7xl text-green font-extralight uppercase mb-10">Часто задаваемые вопросы</h2>
+                <ul className="flex flex-col gap-7">
+                    <Faq>
+                        <h3 className="text-3xl uppercase">{data.question1}</h3>
+                        <p>{data.question1text}</p>
+                    </Faq>
+                    <Faq>
+                        <h3 className="text-3xl uppercase">{data.question2}</h3>
+                        <p>{data.question2text}</p>
+                    </Faq>
+                    <Faq>
+                        <h3 className="text-3xl uppercase">{data.question3}</h3>
+                        <p>{data.question3text}</p>
+                    </Faq>
+                    <Faq>
+                        <h3 className="text-3xl uppercase">{data.question4}</h3>
+                        <p>{data.question4text}</p>
+                    </Faq>
+                    <Faq>
+                        <h3 className="text-3xl uppercase">{data.question5}</h3>
+                        <p>{data.question5text}</p>
+                    </Faq>
+                </ul>
             </section>
         </section>
     );

@@ -50,6 +50,16 @@ export async function POST(request) {
         h3p: data.get("h3p"),
         annotation: data.get("annotation"),
         image: `/images/${finalFileName}`,
+        question1: data.get("question1"),
+        question1text: data.get("question1text"),
+        question2: data.get("question2"),
+        question2text: data.get("question2text"),
+        question3: data.get("question3"),
+        question3text: data.get("question3text"),
+        question4: data.get("question4"),
+        question4text: data.get("question4text"),
+        question5: data.get("question5"),
+        question5text: data.get("question5text"),
     });
 
     const slug = transliteration(data.get("title"));
