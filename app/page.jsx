@@ -32,9 +32,7 @@ export default async function Home() {
       <Image src={heroImg} alt="Картинка на весь экран" width={4531} height={3021} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
       <div className="gradient absolute top-0 left-0 w-full h-dvh -z-9 opacity-75 lg:hidden" />
 
-      <section id="hero" className="relative w-full min-h-screen flex flex-col justify-center items-center sm:items-start px-4 sm:px-8 md:px-12 lg:px-20 py-20 gap-8 sm:gap-12 overflow-hidden">
-        <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-pink/10 blur-3xl -z-10"></div>
-        <div className="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-green/10 blur-3xl -z-10"></div>
+      <section id="hero" className="relative w-full h-screen flex flex-col justify-center items-center sm:items-start px-4 sm:px-8 md:px-12 lg:px-20 py-20 gap-8 sm:gap-12 overflow-hidden">
         <h1 className="font-extralight text-4xl sm:text-7xl text-green uppercase text-center sm:text-left animate-fadeIn">
           Mari Stretching
         </h1>
@@ -43,7 +41,7 @@ export default async function Home() {
           Хочу, чтобы вы полюбили тренировки также, как я люблю их создавать для вас.
         </p>
         <Link
-          className="font-semibold sm:text-2xl text-white px-10 py-6 bg-pink rounded-3xl max-w-[435px] hover:bg-pink-dark duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform animate-fadeIn delay-200 text-center"
+          className="font-medium sm:text-2xl text-white px-10 py-6 bg-pink rounded-3xl max-w-[435px] hover:bg-green text-center"
           href="https://mari-stretching.tilda.ws/spb"
         >
           Занятия в Петербурге
@@ -53,7 +51,7 @@ export default async function Home() {
       <section className="max-w-7xl mx-auto py-16 sm:py-24">
         <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-stretch">
           <div className="w-full lg:w-1/2 flex flex-col gap-8 sm:gap-10">
-            <h2 className="text-pink font-extralight text-4xl sm:text-6xl lg:text-7xl uppercase leading-tight hover:scale-[1.01] transition-transform duration-300">
+            <h2 className="text-pink font-extralight text-4xl sm:text-6xl lg:text-7xl uppercase leading-tight">
               Почему пилатес?
             </h2>
             <div className="space-y-10">
@@ -75,16 +73,15 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 relative rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-500">
+          <div className="w-full lg:w-1/2 relative overflow-hidden">
             <Image
               src={aboutMe}
               alt="Пилатес - польза для тела и разума"
               width={600}
               height={900}
-              className="object-cover transition-transform duration-700 hover:scale-105"
+              className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
           </div>
         </div>
       </section>
