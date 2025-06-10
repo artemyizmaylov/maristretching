@@ -39,8 +39,8 @@ export default async function CoursePage({ params }) {
     return (
         <section className="pt-20 container">
             <h2 className="text-pink font-extralight text-4xl sm:text-7xl uppercase">О курсе {data.title}</h2>
-            <div className="flex flex-col lg:flex-row items-center justify-center lg:items-stretch lg:justify-between pt-10 gap-6">
-                <div className='relative w-full basis-1/2'>
+            <div className="flex flex-col items-center justify-center lg:flex-row lg:items-stretch lg:justify-between pt-10 gap-6">
+                <div className='relative w-full h-[350px] basis-auto lg:h-auto lg:basis-1/2'>
                     <Image
                         src={data.image}
                         alt="Изображение курса"
