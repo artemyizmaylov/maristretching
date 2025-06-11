@@ -124,7 +124,7 @@ export default function AboutMe() {
                             <div className="sm:w-1/2 sm:pr-12 hidden sm:block"></div>
                             <div className="sm:w-1/2 sm:pl-12 ml-12 sm:ml-0">
                                 <p className="text-lg sm:text-xl font-medium text-gray-900">Окончание медицинского университета</p>
-                                <p className="text-gray-600">Обучение нутрициологии, выпуск марафона "Плоский живот", ведение очных групп в Петербурге</p>
+                                <p className="text-gray-600">Обучение нутрициологии, выпуск марафона &quot;Плоский живот`&quot;, ведение очных групп в Петербурге</p>
                             </div>
                         </div>
 
