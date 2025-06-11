@@ -86,8 +86,8 @@ export default function AboutMe() {
                                 2021
                             </div>
                             <div className="sm:w-1/2 sm:pr-12 sm:mt-0 sm:text-right ml-12 sm:ml-0">
-                                <p className="text-lg sm:text-xl font-medium text-gray-900">Обучение по растяжке</p>
-                                <p className="text-gray-600">Освоение новых методик работы с телом</p>
+                                <p className="text-lg sm:text-xl font-medium text-gray-900">Обучение на тренера по растяжке</p>
+                                <p className="text-gray-600">Преподавание классического балета, боди-балета, осанки в студиях в Петербурге</p>
                             </div>
                             <div className="sm:w-1/2 sm:pl-12 hidden sm:block"></div>
                         </div>
@@ -99,8 +99,8 @@ export default function AboutMe() {
                             </div>
                             <div className="sm:w-1/2 sm:pr-12 hidden sm:block"></div>
                             <div className="sm:w-1/2 sm:pl-12 ml-12 sm:ml-0">
-                                <p className="text-lg sm:text-xl font-medium text-gray-900">Развитие блога и обучение</p>
-                                <p className="text-gray-600">Инструктор по пилатесу, онлайн-занятия</p>
+                                <p className="text-lg sm:text-xl font-medium text-gray-900">Начало ведения блога и погружение в мир пилатеса</p>
+                                <p className="text-gray-600">Обучение на инструктора по пилатесу в Москве, и первые подписчики на YouTube и Telegram</p>
                             </div>
                         </div>
 
@@ -110,8 +110,8 @@ export default function AboutMe() {
                                 2023
                             </div>
                             <div className="sm:w-1/2 sm:pr-12 sm:mt-0 sm:text-right ml-12 sm:ml-0">
-                                <p className="text-lg sm:text-xl font-medium text-gray-900">Первый курс и двигательная терапия</p>
-                                <p className="text-gray-600">Выпуск курсов, углубление в терапию</p>
+                                <p className="text-lg sm:text-xl font-medium text-gray-900">Создание первого фитнес курса и первый миллион просмотров</p>
+                                <p className="text-gray-600">Углубление в двигательную терапию и анатомию</p>
                             </div>
                             <div className="sm:w-1/2 sm:pl-12 hidden sm:block"></div>
                         </div>
@@ -123,9 +123,21 @@ export default function AboutMe() {
                             </div>
                             <div className="sm:w-1/2 sm:pr-12 hidden sm:block"></div>
                             <div className="sm:w-1/2 sm:pl-12 ml-12 sm:ml-0">
-                                <p className="text-lg sm:text-xl font-medium text-gray-900">Окончание университета и новые достижения</p>
-                                <p className="text-gray-600">100 000 подписчиков на YouTube, обучение нутрициологии, очные занятия</p>
+                                <p className="text-lg sm:text-xl font-medium text-gray-900">Окончание медицинского университета</p>
+                                <p className="text-gray-600">Обучение нутрициологии, выпуск марафона "Плоский живот", ведение очных групп в Петербурге</p>
                             </div>
+                        </div>
+
+                        {/* 2025 */}
+                        <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12">
+                            <div className="sm:absolute left-4 sm:left-1/2 sm:-translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-pink text-white font-medium text-xs">
+                                2025
+                            </div>
+                            <div className="sm:w-1/2 sm:pr-12 sm:mt-0 sm:text-right ml-12 sm:ml-0">
+                                <p className="text-lg sm:text-xl font-medium text-gray-900">Новые достижения и ...</p>
+                                <p className="text-gray-600">200 000 подписчиков на YouTube, съемка нового курса, участие в проектах</p>
+                            </div>
+                            <div className="sm:w-1/2 sm:pl-12 hidden sm:block"></div>
                         </div>
                     </div>
                 </div>
