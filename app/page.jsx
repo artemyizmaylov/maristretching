@@ -60,7 +60,7 @@ export default async function Home() {
                   ТЕЛО
                 </h3>
                 <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-700">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita infinito spirito distinctio.
+                  Меня зовут Мария Дягилева, и моя жизнь — это движение. С детства спорт был моей страстью, а стремление глубже понять тело и здоровье привело меня в медицинский университет. Теперь я врач, тренер и вечный ученик: учусь на нутрициолога, прохожу курсы, работаю с клиентами и веду группы в Петербурге. Пилатес, растяжка, восстановление после родов, МФР и двигательная терапия — мои инструменты для того, чтобы помогать людям чувствовать себя сильными и свободными в своем теле.
                 </p>
               </div>
               <div className="group">
@@ -68,7 +68,7 @@ export default async function Home() {
                   РАЗУМ
                 </h3>
                 <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-700">
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                  Но спорт — не просто физическая практика. Это философия, вдохновение и забота о себе. Поэтому я веду блог: на YouTube делюсь тренировками, а в Telegram — знаниями о здоровье и мотивацией. Для меня важно, чтобы движение приносило радость, а осознанность стала привычкой. Ведь гармония начинается с любви к себе — и я покажу, как ее найти.
                 </p>
               </div>
             </div>
