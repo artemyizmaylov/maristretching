@@ -8,7 +8,7 @@ import Providers from './components/Providers';
 export const metadata = {
   title: "maristretching",
   description: "Йога и не только",
-  keywords: "йога, растяжка, спорт"
+  keywords: "йога, растяжка, спорт, Мари, Мария, Дягелева, пилатес, курсы, занятия"
 };
 
 const helveticaNeue = localFont({
