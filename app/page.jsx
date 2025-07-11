@@ -52,12 +52,12 @@ export default async function Home() {
         <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-stretch">
           <div className="w-full lg:w-1/2 flex flex-col gap-8 sm:gap-10">
             <h2 className="text-pink font-extralight text-4xl sm:text-6xl lg:text-7xl uppercase leading-tight">
-              Почему пилатес?
+              РАСТЯЖКА С МАРИ
             </h2>
             <div className="space-y-10">
               <div className="group">
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl mb-4 pb-2 border-b border-pink/20 group-hover:border-pink transition-colors duration-500">
-                  ТЕЛО
+                  ОБО МНЕ
                 </h3>
                 <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-700">
                   Меня зовут Мария Дягилева, и моя жизнь — это движение. С детства спорт был моей страстью, а стремление глубже понять тело и здоровье привело меня в медицинский университет. Теперь я врач, тренер и вечный ученик: учусь на нутрициолога, прохожу курсы, работаю с клиентами и веду группы в Петербурге. Пилатес, растяжка, восстановление после родов, МФР и двигательная терапия — мои инструменты для того, чтобы помогать людям чувствовать себя сильными и свободными в своем теле.
@@ -65,7 +65,7 @@ export default async function Home() {
               </div>
               <div className="group">
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl mb-4 pb-2 border-b border-pink/20 group-hover:border-pink transition-colors duration-500">
-                  РАЗУМ
+                  ФИЛОСОФИЯ
                 </h3>
                 <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-700">
                   Но спорт — не просто физическая практика. Это философия, вдохновение и забота о себе. Поэтому я веду блог: на YouTube делюсь тренировками, а в Telegram — знаниями о здоровье и мотивацией. Для меня важно, чтобы движение приносило радость, а осознанность стала привычкой. Ведь гармония начинается с любви к себе — и я покажу, как ее найти.
