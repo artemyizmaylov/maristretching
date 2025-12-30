@@ -48,11 +48,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
 
-      <head>
+      §      {/* <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
+      </head> */}
 
-      <body className={helveticaNeue.className}>
+      <body className={helveticaNeue.variable}>
         <Providers>
           <Header />
           {children}

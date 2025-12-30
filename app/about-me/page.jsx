@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import aboutMe from '../images/about-me2.webp'
 
 export default function AboutMe() {
     return (
@@ -11,7 +9,7 @@ export default function AboutMe() {
             <div className="flex flex-col md:flex-row gap-12 lg:gap-16 xl:gap-24 lg:items-center">
                 <div className="w-full md:w-1/2 relative group">
                     <Image
-                        src={aboutMe}
+                        src={"/images/about-me2.webp"}
                         alt="Мария Дягилева - врач и тренер"
                         width={600}
                         height={800}

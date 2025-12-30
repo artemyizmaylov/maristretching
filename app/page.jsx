@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Slider from "./ui/slider";
 import Banner from "./ui/banner";
-import heroImg from "./images/hero.webp"
-import aboutMe from './images/about-me1.webp'
 
 export const dynamic = 'force-dynamic'; // Добавляем эту строку для динамического поведения
 
@@ -29,7 +27,7 @@ export default async function Home() {
 
   return (
     <main className="py-20 px-4 relative overflow-hidden">
-      <Image src={heroImg} alt="Картинка на весь экран" width={4531} height={3021} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
+      <Image src={"/images/hero.webp"} alt="Картинка на весь экран" width={4531} height={3021} className="absolute top-0 left-0 w-full h-dvh -z-10 object-cover origin-right" />
       <div className="gradient absolute top-0 left-0 w-full h-dvh -z-9 opacity-75 lg:hidden" />
 
       <section id="hero" className="relative w-full h-screen flex flex-col justify-center items-center sm:items-start px-4 sm:px-8 md:px-12 lg:px-20 py-20 gap-8 sm:gap-12 overflow-hidden">
@@ -75,7 +73,7 @@ export default async function Home() {
           </div>
           <div className="w-full lg:w-1/2 relative overflow-hidden">
             <Image
-              src={aboutMe}
+              src={"/images/about-me1.webp"}
               alt="Пилатес - польза для тела и разума"
               width={600}
               height={900}
