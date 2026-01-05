@@ -25,7 +25,6 @@ export default function ArticleCard({ data }) {
             }>
                 <h6 className="font-medium line-clamp-1">{data.title}</h6>
             </Link>
-            <p className="line-clamp-2">{data.content}</p>
         </div>
     );
 }

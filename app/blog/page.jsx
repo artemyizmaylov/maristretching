@@ -1,4 +1,4 @@
-import ArticleCard from "@/app/ui/article-card";
+import ArticleCard from "@/app/ui/blog-card";
 
 export const dynamic = 'force-dynamic'; // Добавляем эту строку для динамического поведения
 
