@@ -69,17 +69,16 @@ export default async function Home() {
                   Этот рацион задуман как опора, а не жёсткая диета. Вы просто открываете нужный день и следуете плану, добавляя к нему свои маленькие привычки и вкусы.
                   После оплаты вы получаете эстетично оформленную книгу и доступ к рациону в закрытом телеграм‑канале. Там же можно присоединиться к общему чату: делиться фото блюд, задавать вопросы, вдохновляться и идти к новым пищевым привычкам вместе с другими девочками.
                 </p>
-                <a href="https://t.me/mari_stretching/2554" className="hover:text-green text-pink text-base sm:text-lg lg:text-xl leading-relaxed">Подробнее о рационе</a>
+                <a href="https://t.me/mari_stretching/2554" className="hover:text-green text-pink text-base sm:text-lg lg:text-xl leading-relaxed underline">Подробнее о рационе</a>
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 relative overflow-hidden flex justify-center">
+          <div className="relative w-full lg:w-1/2 grow min-h-[650px]">
             <Image
-              src="/images/about-me1.webp"
+              src="/images/ratzion.PNG"
               alt="Пилатес - польза для тела и разума"
-              width={600}
-              height={900}
-              className="object-cover"
+              layout="fill"
+              className="object-contain"
               priority
             />
           </div>
